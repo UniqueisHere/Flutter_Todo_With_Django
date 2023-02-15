@@ -13,11 +13,13 @@ class ReadTodoView(generics.ListAPIView):           #Read all the values
 class UpadateTodoView(generics.UpdateAPIView):      #Update the created to do
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
+    
 
 
 class CreateTodoView(generics.CreateAPIView):       #Create a new todo
     queryset = Todo.objects.all()
     serializer_class = TodoSerializer
+
 
 
 class DeteleTodoView(generics.DestroyAPIView):      #Delete created todo's

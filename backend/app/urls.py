@@ -6,5 +6,5 @@ urlpatterns = [
     path('<int:pk>/', UpadateTodoView.as_view(), name='<int:pk>/'),
     path('', ReadTodoView.as_view(), name=''),
     path('create/', CreateTodoView.as_view(), name='create/'),
-    path('delete/<int:pk>/', ReadTodoView.as_view(), name='delete/<int:pk>/'),
+    path('delete/<int:pk>/', DeteleTodoView.as_view(), name='delete/<int:pk>/'),
 ]
